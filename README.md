@@ -17,7 +17,7 @@ def nome_da_funcao(Parametros de entrada):
 
 return
 ```
-Detalhe importante, a função pode ou não ter algum retorno, no nosso exemplo iremos ter dois parametros de entrada, executar o select dentro do bando de dados e salvar em um dataframe, logo essa função retorna um dataframe
+Detalhe importante, a função pode ou não ter algum retorno, no nosso exemplo iremos ter dois parametros de entrada, executar o select dentro do bando de dados e salvar em um dataframe, logo essa função retorna um dataframe, seguindo com código completo:
 
 ```
 def conectabd(ip, data):
