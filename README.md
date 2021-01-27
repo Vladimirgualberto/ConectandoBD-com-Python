@@ -10,7 +10,7 @@ import sqlalchemy
 import pandas as pd
 ```
 ## Segundo passo
-Vamos agora definir uma função em python e para isso definimos utilizando a seguinte construtor:
+Vamos agora definir uma função em python e para isso definimos utilizando o seguinte construtor:
 
 ```
 def nome_da_funcao(Parametros de entrada):
