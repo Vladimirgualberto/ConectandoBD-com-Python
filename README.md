@@ -22,7 +22,7 @@ Detalhe importante, a função pode ou não ter algum retorno, no nosso exemplo 
 ```
 def conectabd(ip, data):
     engine = sqlalchemy.create_engine( 'mysql+pymysql://user:password@'+ip+':3306/database')
-    sql = "SELECT * duration FROM nomedobanco.tabela where date >= '"+data+" 00:00:01' and date <= '"+data+" 23:59:59'"
+    sql = "SELECT * FROM nomedobanco.tabela where date >= '"+data+" 00:00:01' and date <= '"+data+" 23:59:59'"
     df = pd.read_sql(sql,engine)
     return df
 ```
