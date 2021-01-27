@@ -8,5 +8,4 @@ Vamos precisar importar a lib sqlalchemy, neste exemplos vamos utilizar a lib pa
 ```
 import sqlalchemy
 import pandas as pd
-
 ```
