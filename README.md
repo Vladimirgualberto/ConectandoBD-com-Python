@@ -33,13 +33,13 @@ Vamos agora detalhar linha a linha do corpo da função, na primeira linha temos
 
 engine = sqlalchemy.create_engine( 'mysql+pymysql://user:password@'+ip+':3306/database')
 
-A váriável engine expressa a string de conexão do banco de dados, invocando a função create_engine da lib sqlalchemy, como parâmetros temos a string informando o motor de conexão do slq e python, neste caso definido por 'mysql+pymysql'. O próximo passo é o nome do usuário de conexão com banco de dados, definido por "user" seguido de :password que representa a senha(neste caso o administrador do banco de dados deve criar um usuário e senha de acesso ao banco de dados) concatenado com @+ip+, neste caso estamos montando a string baseada na variável de entrada ip, de forma mais direta teremos o seguinte exemplo: mysql+pymysql://user:password@192.168.1.10:3306 e por fim o database representa a instância ou nome do banco de dados.
+A váriável engine expressa a string de conexão do banco de dados, invocando a função create_engine da lib sqlalchemy, como parâmetros temos a string informando o motor de conexão do slq e python, neste caso definido por 'mysql+pymysql'. O próximo passo é o nome do usuário de conexão com banco de dados, definido por "user" seguido de :password que representa a senha(o administrador do banco de dados deve criar um usuário e senha de acesso ao banco de dados) concatenado com @+ip+, neste caso estamos montando a string baseada na variável de entrada ip, de forma mais direta teremos o seguinte exemplo: mysql+pymysql://user:password@192.168.1.10:3306 e por fim o database representa a instância ou nome do banco de dados.
 
 Na segunda linha temos:
 
 sql = "SELECT * duration FROM nomedobanco.tabela where date >= '"+data+" 08:00:00' and date <= '"+data+" 21:00:0'"
 
-a variável sql armazena a string de select no banco de dados, selecionando as informações baseado em uma data específica (neste caso estamos definindo uma data fixa ,por exemplo, "2020-12-31" e estamos definindo um horário de busca fixa, logo esse exemplo trará do banco de dados informações do dia 31 do dezembro de 2020 com horário entre 8 horas e 21 horas.
+a variável sql armazena a string de select no banco de dados, selecionando as informações baseado em uma data específica (estamos definindo uma data fixa ,por exemplo, "2020-12-31" e estamos definindo um horário de busca fixa, logo esse exemplo trará do banco de dados informações do dia 31 do dezembro de 2020 com horário entre 8 horas e 21 horas.
 
 Por fim, na terceira linha temos:
 
