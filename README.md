@@ -32,7 +32,7 @@ No exemplo temos então a função definida com nome de conectabd e com dois par
 Vamos agora detalhar linha a linha do corpo da função, na primeira linha temos:
 engine = sqlalchemy.create_engine( 'mysql+pymysql://user:password@'+ip+':3306/database')
 
-a váriável engine expressa a string de conexção do banco de dados, invocando a função create_engine da lib sqlalchemy, como parametros temos a string informando o motor de conexão do slq e python, neste caso definido por 'mysql+pymysql', em seguinda o nome do usuário de conexão com banco de dados definido por "user" seguido de :password que representa a senha(neste caso o administrador do banco de dados deve criar um usuário e senha de acesso ao banco de dados) concatenado com @+ip+, neste caso estamos montando a string baseada na variável de entrada ip, de forma mais direta teremos o seguinte exemplo: mysql+pymysql://user:password@192.168.1.10:3306 e por fim o database representa a instância ou nome do banco de dados.
+a váriável engine expressa a string de conexão do banco de dados, invocando a função create_engine da lib sqlalchemy, como parametros temos a string informando o motor de conexão do slq e python, neste caso definido por 'mysql+pymysql', em seguinda o nome do usuário de conexão com banco de dados definido por "user" seguido de :password que representa a senha(neste caso o administrador do banco de dados deve criar um usuário e senha de acesso ao banco de dados) concatenado com @+ip+, neste caso estamos montando a string baseada na variável de entrada ip, de forma mais direta teremos o seguinte exemplo: mysql+pymysql://user:password@192.168.1.10:3306 e por fim o database representa a instância ou nome do banco de dados.
 
 Na segunda linha temos:
 
