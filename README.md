@@ -27,7 +27,7 @@ def conectabd(ip, data):
     return df
 ```
 
-No exemplo temos então a função definida com nome de conectabd e com dois parametros de entrada, o primeiro o ip de destino, que é o local onde o bando de dados está em execução e o segundo é um parametro de data que vai informar qual período ou data será realizado no select.
+No exemplo temos então a função definida com nome de conectabd e com dois parametros de entrada, o primeiro é o ip de destino, que é o local onde o bando de dados está em execução, o segundo é um parametro de data que vai informar qual período que será consultado no select dentro do bd.
 
 Vamos agora detalhar linha a linha do corpo da função, na primeira linha temos:
 engine = sqlalchemy.create_engine( 'mysql+pymysql://user:password@'+ip+':3306/database')
